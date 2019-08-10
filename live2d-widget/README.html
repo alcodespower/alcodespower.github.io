@@ -1,37 +1,39 @@
-<h1 id="添加看板娘（live-2d）"><a href="#添加看板娘（live-2d）" class="headerlink" title="添加看板娘（live-2d）"></a>添加看板娘（live-2d）</h1><p>之前一直有人在问关于看板娘的配置，这次我们来讲讲如何在博客上添加可爱的看板娘！</p>
+<hr>
+<p>title: 添加看板娘(live-2d)<br>date: 2019-08-09 23:46:03</p>
+<h2 id="tags-forMONARCH"><a href="#tags-forMONARCH" class="headerlink" title="tags: forMONARCH"></a>tags: forMONARCH</h2><p>之前一直有人在问关于看板娘的配置，这次我们来讲讲如何在博客上添加可爱的看板娘！</p>
 <p>第七套全国中小学生… 咳咳，了解~</p>
-<h2 id="1-起式"><a href="#1-起式" class="headerlink" title="1. 起式"></a>1. 起式</h2><h3 id="先去GitHub-clone套件"><a href="#先去GitHub-clone套件" class="headerlink" title="先去GitHub clone套件"></a>先去GitHub clone套件</h3><pre><code>$git clone git@github.com:stevenjoezhang/live2d-widget.git</code></pre><p>简单点实现：（效果）<br><img src="https://raw.githubusercontent.com/alcodespower/alcodespower.github.io/master/images/01.gif" alt="简单实现"><br>建议小白学习这个：</p>
-<ol>
-<li><pre><code>$ npm install --save hexo-helper-live2d</code></pre></li>
-<li><p>在站点配置文件(配置文件：_config.yml) 或 主题配置文件中新增如下内容：</p>
+<h2 id="1-起式"><a href="#1-起式" class="headerlink" title="1. 起式"></a>1. 起式</h2><h3 id="先去GitHub-clone套件"><a href="#先去GitHub-clone套件" class="headerlink" title="先去GitHub clone套件"></a>先去GitHub clone套件</h3><pre><code>$ git clone git@github.com:alcodespower/d2evil.git</code></pre><p>简单点实现：（效果）</p>
+<p>建议小白学习这个：</p>
+<pre><code>$ npm install --save hexo-helper-live2d</code></pre><p> 在站点配置文件(配置文件：_config.yml) 或 主题配置文件中新增如下内容：</p>
 <pre><code># Live2D
 ## https://alcodespower.github.io/
 live2d:
-enable: true
-# enable: false
-scriptFrom: local # 默认
-pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
-pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
-pluginModelPath: assets/ # 模型文件相对与插件根目录路径
-# scriptFrom: jsdelivr # jsdelivr CDN
-# scriptFrom: unpkg # unpkg CDN
-# scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
-tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
-debug: false # 调试, 是否在控制台输出日志
-model:
- use: live2d-widget-model-wanko # npm-module package name
- # use: wanko # 博客根目录/live2d_models/ 下的目录名
- # use: ./wives/wanko # 相对于博客根目录的路径
- # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
-display:
- position: right
- width: 150
- height: 300
-mobile:
- show: true # 手机中是否展示</code></pre><p>可以直接复制…比较简单，摸索一下就ok了。</p>
-</li>
-</ol>
-<h2 id="2-进阶"><a href="#2-进阶" class="headerlink" title="2.进阶"></a>2.进阶</h2><pre><code>$git clone git@github.com:stevenjoezhang/live2d-widget.git</code></pre><pre><code>く__,.ヘヽ.        /  ,ー､ 〉
+  enable: true
+  # enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-wanko # npm-module package name
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true # 手机中是否展示</code></pre><p>可以直接复制…比较简单，摸索一下就ok了。</p>
+<p>效果：</p>
+<p><img src="https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=ea0c3f2635c79f3d8fb4ec368a91e129/203fb80e7bec54e715e060c7b7389b504ec26ade.jpg" alt="简单实现"></p>
+<!-- more -->
+<h2 id="2-进阶"><a href="#2-进阶" class="headerlink" title="2.进阶"></a>2.进阶</h2><pre><code>$ git clone git@github.com:stevenjoezhang/live2d-widget.git</code></pre><pre><code>く__,.ヘヽ.        /  ,ー､ 〉
           ＼ &apos;, !-─‐-i  /  /´
           ／｀ｰ&apos;       L/／｀ヽ､
         /   ／,   /|   ,   ,       &apos;,
@@ -47,18 +49,9 @@ mobile:
              !&apos;〈//｀Ｔ´&apos;, ＼ ｀&apos;7&apos;ｰr&apos;
              ﾚ&apos;ヽL__|___i,___,ンﾚ|ノ
                  ﾄ-,/  |___./
-                 &apos;ｰ&apos;    !_,.:</code></pre><ol>
-<li><p>解压到本地博客目录的themes/next/source下，修改autoload.js文件，如下：        将</p>
-<pre><code>const live2d_path = &quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/&quot;;</code></pre><p> 改为</p>
-<pre><code>
-const live2d_path = &quot;/live2d-widget/&quot;;</code></pre><p>注释部分有这段<code>const live2d_path = &quot;/live2d-widget/&quot;</code>代码</p>
-<p> <img src="https://cdn.img.wenhairu.com/images/2019/08/09/88P7o.png" alt="88P7o.png"></p>
-</li>
-<li><p>在/themes/next/layout/_layout.swing中,新增如下内容</p>
-<p> <img src="https://cdn.img.wenhairu.com/images/2019/08/09/88Zsf.md.png" alt="88Zsf.md.png"></p>
-</li>
-<li><p>在主题配置文件中,新增如下内容：    </p>
+                 &apos;ｰ&apos;    !_,.:</code></pre><p>1.解压到本地博客目录的themes/next/source下，修改autoload.js文件，如下：        将</p>
+<pre><code>const live2d_path = &quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/&quot;;</code></pre><pre><code>改为</code></pre><pre><code>const live2d_path = &quot;/live2d-widget/&quot;;</code></pre><p>注释部分有这段<code>const live2d_path = &quot;/live2d-widget/&quot;</code>代码<br><img src="https://cdn.img.wenhairu.com/images/2019/08/09/88P7o.png" alt="88P7o.png"></p>
+<p>2.在/themes/next/layout/_layout.swing中,新增如下内容</p>
+<pre><code>![88Zsf.md.png](https://cdn.img.wenhairu.com/images/2019/08/09/88Zsf.md.png)</code></pre><p>3.在主题配置文件中,新增如下内容：    </p>
 <pre><code>live2d:
-   enable: true</code></pre><p>大神效果：<br><img src="https://raw.githubusercontent.com/alcodespower/alcodespower.github.io/master/images/02.gif" alt="大神效果"></p>
-</li>
-</ol>
+      enable: true</code></pre><p>升级效果：<br><img src="https://gss0.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=d468405a012442a7ae5bf5a3e1738173/9358d109b3de9c829b6183566281800a18d843e6.jpg" alt="大神效果"></p>
