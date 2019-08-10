@@ -41,10 +41,6 @@
     transition: transform .3s ease-in-out;
     transform: translateY(3px);
   }
-  #waifu:hover {
-    transform: translateY(0);
-    opacity: .5;
-  }
 }
 #waifu-tips {
 	opacity: 0;
