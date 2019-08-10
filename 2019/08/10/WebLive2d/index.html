@@ -95,20 +95,18 @@
 
 
 
-  <meta name="description" content="wepy使用踩坑排雷 安装wepynpm install wepy-cli -g  生成项目wepy new &amp;lt;projectname&amp;gt;  实时编译wepy build --watch">
-<meta name="keywords" content="wxmini">
+  <meta name="description" content="在网页中使用live2d代码结构： 12345678910111213141516&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;    &amp;lt;meta name=&quot;viewport&quot;          content=&quot;width=device-width, user-">
+<meta name="keywords" content="forALL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wepy使用踩坑排雷">
-<meta property="og:url" content="http://yoursite.com/2019/07/31/wepy/index.html">
+<meta property="og:title" content="在网页中使用live2d">
+<meta property="og:url" content="http://yoursite.com/2019/08/10/WebLive2d/index.html">
 <meta property="og:site_name" content="Mr.White Says">
-<meta property="og:description" content="wepy使用踩坑排雷 安装wepynpm install wepy-cli -g  生成项目wepy new &amp;lt;projectname&amp;gt;  实时编译wepy build --watch">
+<meta property="og:description" content="在网页中使用live2d代码结构： 12345678910111213141516&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;    &amp;lt;meta name=&quot;viewport&quot;          content=&quot;width=device-width, user-">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://cdn.img.wenhairu.com/images/2019/07/31/h1GK.md.png">
-<meta property="og:updated_time" content="2019-07-31T05:50:52.030Z">
+<meta property="og:updated_time" content="2019-08-10T10:15:06.548Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wepy使用踩坑排雷">
-<meta name="twitter:description" content="wepy使用踩坑排雷 安装wepynpm install wepy-cli -g  生成项目wepy new &amp;lt;projectname&amp;gt;  实时编译wepy build --watch">
-<meta name="twitter:image" content="https://cdn.img.wenhairu.com/images/2019/07/31/h1GK.md.png">
+<meta name="twitter:title" content="在网页中使用live2d">
+<meta name="twitter:description" content="在网页中使用live2d代码结构： 12345678910111213141516&amp;lt;!doctype html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;    &amp;lt;meta name=&quot;viewport&quot;          content=&quot;width=device-width, user-">
 
 
 
@@ -116,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/31/wepy/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/10/WebLive2d/">
 
 
 
@@ -126,7 +124,7 @@
   };
 </script>
 
-  <title>wepy使用踩坑排雷 | Mr.White Says</title>
+  <title>在网页中使用live2d | Mr.White Says</title>
   
 
 
@@ -306,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/31/wepy/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/10/WebLive2d/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mr.White">
@@ -323,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">wepy使用踩坑排雷
+          <h1 class="post-title" itemprop="name headline">在网页中使用live2d
 
               
             
@@ -349,7 +347,7 @@
                 
               
 
-              <time title="Created: 2019-07-31 13:02:44 / Modified: 13:50:52" itemprop="dateCreated datePublished" datetime="2019-07-31T13:02:44+08:00">2019-07-31</time>
+              <time title="Created: 2019-08-10 18:10:16 / Modified: 18:15:06" itemprop="dateCreated datePublished" datetime="2019-08-10T18:10:16+08:00">2019-08-10</time>
             
 
             
@@ -389,7 +387,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">306</span>
+                <span title="Symbols count in article">1.2k</span>
               
 
               
@@ -423,18 +421,17 @@
       
 
       
-        <h1 id="wepy使用踩坑排雷"><a href="#wepy使用踩坑排雷" class="headerlink" title="wepy使用踩坑排雷"></a>wepy使用踩坑排雷</h1><ol>
-<li><p>安装wepy<br><code>npm install wepy-cli -g</code></p>
-</li>
-<li><p>生成项目<br><code>wepy new &lt;projectname&gt;</code></p>
-</li>
-<li><p>实时编译<br><code>wepy build --watch</code></p>
-</li>
-</ol>
-<a id="more"></a>
-<p>有时候，它会说 <code>please use wepy init standard demo ...</code>这里我们只需要按他说的做，这样写：        </p>
-<p><code>$ wepy init standard &lt;ProjectName&gt;</code></p>
-<p>这里的<code>ProjectName</code>是到时候文件夹的名字，<br>下面的除了<code>ESLint</code>是 “ n ”，其他直接回车就行了，这步骤插在第二三步之间。<br>我这里的描述，上头了写了个 n 哈哈哈，别在意哈<br><img src="https://cdn.img.wenhairu.com/images/2019/07/31/h1GK.md.png" alt="操作图"></p>
+        <h1 id="在网页中使用live2d"><a href="#在网页中使用live2d" class="headerlink" title="在网页中使用live2d"></a>在网页中使用live2d</h1><p>代码结构：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">content</span>=<span class="string">"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"</span>&gt;</span><span class="comment">&lt;!-- 调用CDN --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 引用js文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./autoload.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>简单来说就是三行：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdn.jsdelivr.net/npm/font-awesome/CSS/font-awesome.min.css"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后就能实现在网页上出现可爱的看板娘。（还有飞机大战嗷！）</p>
+<p>本地配置比较，有点吧，有点繁琐，就是在<code>autoload.js</code>开头处写入绝对地址，代码里有注释,我本地打开时候，用WebStorm可以显示，本地打开不起作用，知道的小伙伴可以告诉我为什么，<a href="http://wpa.qq.com/msgrd?v=3&uin=1412124522&site=qq&menu=yes" title="点击联系我" target="_blank" rel="noopener">点击联系我</a>。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const live2d_path = "/live2d-widget/live2d/";</span><br></pre></td></tr></table></figure>
+
+<p>Github项目地址：<br><a href="https://github.com/alcodespower/WebLive2d" title="https://github.com/alcodespower/WebLive2d" target="_blank" rel="noopener">https://github.com/alcodespower/WebLive2d</a></p>
 
       
     </div>
@@ -461,7 +458,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/wxmini/" rel="tag"># wxmini</a>
+            <a href="/tags/forALL/" rel="tag"># forALL</a>
           
         </div>
       
@@ -474,8 +471,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/26/display/" rel="next" title="display:flex是干嘛的？？？">
-                <i class="fa fa-chevron-left"></i> display:flex是干嘛的？？？
+              <a href="/2019/08/09/live2d/" rel="next" title="添加看板娘(live-2d)">
+                <i class="fa fa-chevron-left"></i> 添加看板娘(live-2d)
               </a>
             
           </div>
@@ -483,10 +480,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/05/Tools/" rel="prev" title="一些小工具">
-                一些小工具 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -648,7 +641,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#wepy使用踩坑排雷"><span class="nav-number">1.</span> <span class="nav-text">wepy使用踩坑排雷</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在网页中使用live2d"><span class="nav-number">1.</span> <span class="nav-text">在网页中使用live2d</span></a></li></ol></div>
             
 
           </div>
