@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="1.HTML简介HTML 是用来描述网页的一种语言。 1. HTML 指的是超文本标记语言: HyperText Markup Language 2. HTML 不是一种编程语言，而是一种标记语言 3. 标记语言是一套标记标签 (markup tag) 4. HTML 使用标记标签来描述网页 5. HTML 文档包含了HTML 标签及文本内容 6. HTML文档也叫做 web 页面本文转自–南京邮">
+<meta name="keywords" content="forALL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web前端-chapt01">
+<meta property="og:url" content="http://yoursite.com/2019/10/17/web前端-chapt01/index.html">
+<meta property="og:site_name" content="Mr.White Says">
+<meta property="og:description" content="1.HTML简介HTML 是用来描述网页的一种语言。 1. HTML 指的是超文本标记语言: HyperText Markup Language 2. HTML 不是一种编程语言，而是一种标记语言 3. 标记语言是一套标记标签 (markup tag) 4. HTML 使用标记标签来描述网页 5. HTML 文档包含了HTML 标签及文本内容 6. HTML文档也叫做 web 页面本文转自–南京邮">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.ibb.co/MPCYtM7/web01.png">
+<meta property="og:image" content="https://i.ibb.co/hFjzDsz/layout.png">
+<meta property="og:updated_time" content="2019-10-17T10:18:49.409Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web前端-chapt01">
+<meta name="twitter:description" content="1.HTML简介HTML 是用来描述网页的一种语言。 1. HTML 指的是超文本标记语言: HyperText Markup Language 2. HTML 不是一种编程语言，而是一种标记语言 3. 标记语言是一套标记标签 (markup tag) 4. HTML 使用标记标签来描述网页 5. HTML 文档包含了HTML 标签及文本内容 6. HTML文档也叫做 web 页面本文转自–南京邮">
+<meta name="twitter:image" content="https://i.ibb.co/MPCYtM7/web01.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/2019/10/17/web前端-chapt01/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>web前端-chapt01 | Mr.White Says</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?77abcc5802d5d77680fd5839b2ae3543";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+  
+  
+    
+    
+  <div class="bg_content">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mr.White Says</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Navigationsleiste an/ausschalten">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/17/web前端-chapt01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.White">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/46606813?s=400&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.White Says">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">web前端-chapt01
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-10-17 17:46:05 / Geändert am: 18:18:49" itemprop="dateCreated datePublished" datetime="2019-10-17T17:46:05+08:00">2019-10-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             Aufrufe:  
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbole im Artikel gezählt: </span>
+                
+                <span title="Symbole im Artikel gezählt">4.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Lesezeit &asymp;</span>
+                
+                <span title="Lesezeit">4 minuten.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1-HTML简介"><a href="#1-HTML简介" class="headerlink" title="1.HTML简介"></a>1.HTML简介</h2><pre><code>HTML 是用来描述网页的一种语言。
+1. HTML 指的是超文本标记语言: HyperText Markup Language
+2. HTML 不是一种编程语言，而是一种标记语言
+3. 标记语言是一套标记标签 (markup tag)
+4. HTML 使用标记标签来描述网页
+5. HTML 文档包含了HTML 标签及文本内容
+6. HTML文档也叫做 web 页面</code></pre><p><strong>本文转自–南京邮电大学 曾加俊曾老师</strong></p>
+<a id="more"></a>
+<h2 id="2-HTML代码编辑工具和浏览器的选择"><a href="#2-HTML代码编辑工具和浏览器的选择" class="headerlink" title="2.HTML代码编辑工具和浏览器的选择"></a>2.HTML代码编辑工具和浏览器的选择</h2><h3 id="2-1-代码编辑工具"><a href="#2-1-代码编辑工具" class="headerlink" title="2.1. 代码编辑工具"></a>2.1. 代码编辑工具</h3><pre><code>1. 记事本 (最原始的)
+2. DreamWear (简称DW,老古董)
+3. sublime  (推荐)
+4. webstorm (推荐)
+5. hbuilder (推荐,本课程使用)
+6. VScode（Mr.White在用）</code></pre><h3 id="2-2-浏览器"><a href="#2-2-浏览器" class="headerlink" title="2.2. 浏览器"></a>2.2. 浏览器</h3><pre><code>1. 谷歌chrome (推荐)
+2. 火狐 (推荐)
+3. QQ浏览器 (推荐,本人正在使用的)
+4. IE (坚决不使用)
+5. Edge (坚决不使用)</code></pre><h2 id="3-HTML语法"><a href="#3-HTML语法" class="headerlink" title="3.HTML语法"></a>3.HTML语法</h2><h3 id="3-1-html标准语法结构"><a href="#3-1-html标准语法结构" class="headerlink" title="3.1.html标准语法结构"></a>3.1.html标准语法结构</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;我的第一个网页&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;我的第一个标题&lt;/h1&gt; 
+        &lt;p&gt;我的第一个段落。&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+1. &lt;!DOCTYPE html&gt; 声明为 HTML5 文档,‘lang=“en”’定义网页的语言为英文，定义成中文是&apos;lang=&quot;zh-CN&quot;&apos;,不定义也没什么影响
+2. &lt;html&gt; 元素是 HTML 页面的根元素
+3. &lt;head&gt; 元素包含了文档的元（meta）数据，如 &lt;meta charset=&quot;utf-8&quot;&gt; 定义网页编码格式为 utf-8。
+4. &lt;title&gt; 元素描述了文档的标题
+5. &lt;body&gt; 元素包含了可见的页面内容
+6. &lt;h1&gt; 元素定义一个大标题
+7. &lt;p&gt; 元素定义一个段落</code></pre><h3 id="3-2-单标签和双标签"><a href="#3-2-单标签和双标签" class="headerlink" title="3.2.单标签和双标签"></a>3.2.单标签和双标签</h3><pre><code>1. 单标签
+    只有一个标签的html元素,语法:
+    &lt;标签名 /&gt;
+    例：图像标签
+    &lt;img src=&quot;&quot;/&gt;
+2. 双标签
+    有开始标签和结束标签的html元素,语法:
+    &lt;标签名&gt;&lt;/标签名&gt;
+    例如：标题标签
+    &lt;h1&gt;&lt;/h1&gt;
+3. 嵌套标签
+    &lt;p&gt;
+        &lt;span&gt;...&lt;/span&gt;
+        &lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+          &lt;h3&gt;...&lt;/h3&gt;
+          &lt;div&gt;
+                  &lt;span&gt;...&lt;/span&gt;
+                  &lt;p&gt;...&lt;/p&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;</code></pre><h3 id="3-3-标签的属性和值"><a href="#3-3-标签的属性和值" class="headerlink" title="3.3 标签的属性和值"></a>3.3 标签的属性和值</h3><pre><code>所有标签都有相应的属性,例如
+1. 图片有宽高属性,src属性
+2. 超链接有href属性
+等等..
+
+属性语法:
+1. 单标签的属性:
+    &lt;标签名 属性名=&quot;值&quot;/&gt;
+    例:
+    &lt;img src=&quot;temp.jpg&quot;/&gt;
+2. 双标签的属性
+    &lt;标签名 属性名=&quot;值&quot;&gt;内容&lt;/标签名&gt;
+    例:
+    &lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;</code></pre><h2 id="4-HTML常用标签"><a href="#4-HTML常用标签" class="headerlink" title="4.HTML常用标签"></a>4.HTML常用标签</h2><h3 id="4-1-基础标签"><a href="#4-1-基础标签" class="headerlink" title="4.1.基础标签"></a>4.1.基础标签</h3><pre><code>1. &lt;!DOCTYPE&gt; 定义文档类型。
+2. &lt;html&gt; 定义 HTML 文档。
+3. &lt;title&gt; 定义文档的标题。
+4. &lt;body&gt; 定义文档的主体。
+5. &lt;h1&gt; to &lt;h6&gt; 定义 HTML 标题。
+6. &lt;p&gt; 定义段落。
+7. &lt;br/&gt; 定义简单的折行。
+8. &lt;hr/&gt; 定义水平线。
+9. &lt;!--...--&gt; 定义注释。</code></pre><h3 id="4-2-含样式的标签"><a href="#4-2-含样式的标签" class="headerlink" title="4.2. 含样式的标签"></a>4.2. 含样式的标签</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. &lt;em&gt;&lt;/em&gt; 表示语气中的强调词</span><br><span class="line">2. &lt;i&gt;&lt;/i&gt; 表示专业词汇</span><br><span class="line">3. &lt;b&gt;&lt;/b&gt; 表示文档中的关键字或者产品名</span><br><span class="line">4. &lt;strong&gt;&lt;/strong&gt; 加粗,表示非常重要的内容</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-表单标签"><a href="#4-3-表单标签" class="headerlink" title="4.3. 表单标签"></a>4.3. 表单标签</h3><pre><code>1. &lt;form&gt; 定义供用户输入的 HTML 表单。
+2. &lt;input&gt; 定义输入控件。
+3. &lt;textarea&gt; 定义多行的文本输入控件。
+4. &lt;button&gt; 定义按钮。
+5. &lt;select&gt; 定义选择列表（下拉列表）。
+6. &lt;option&gt; 定义选择列表中的选项。
+7. &lt;label&gt; 定义 input 元素的标注。</code></pre><h3 id="4-4-图像-音频-视频标签"><a href="#4-4-图像-音频-视频标签" class="headerlink" title="4.4.图像/音频/视频标签"></a>4.4.图像/音频/视频标签</h3><pre><code>1. &lt;img&gt; 定义图像。
+2. &lt;audio&gt; 定义声音内容。
+3. &lt;video&gt; 定义视频。
+4. &lt;source&gt; 定义媒介源。</code></pre><h3 id="4-5-链接标签"><a href="#4-5-链接标签" class="headerlink" title="4.5.链接标签"></a>4.5.链接标签</h3><pre><code>1. &lt;a&gt; 定义超链接。
+2. &lt;link&gt; 定义文档与外部资源的关系。</code></pre><h3 id="4-6-列表标签"><a href="#4-6-列表标签" class="headerlink" title="4.6.列表标签"></a>4.6.列表标签</h3><pre><code>1. &lt;ul&gt; 定义无序列表。
+2. &lt;ol&gt; 定义有序列表。
+3. &lt;li&gt; 定义列表的项目。
+4. &lt;dl&gt; 定义定义列表。
+5. &lt;dt&gt; 定义定义列表中的项目。
+6. &lt;dd&gt; 定义定义列表中项目的描述。</code></pre><h3 id="4-7-表格标签"><a href="#4-7-表格标签" class="headerlink" title="4.7.表格标签"></a>4.7.表格标签</h3><pre><code>1. &lt;table&gt; 定义表格
+2. &lt;th&gt; 定义表格中的表头单元格。
+3. &lt;tr&gt; 定义表格中的行。
+4. &lt;td&gt; 定义表格中的单元。
+5. &lt;thead&gt; 定义表格中的表头内容。
+6. &lt;tbody&gt; 定义表格中的主体内容。</code></pre><h3 id="4-8-其他常用标签"><a href="#4-8-其他常用标签" class="headerlink" title="4.8.其他常用标签"></a>4.8.其他常用标签</h3><pre><code>1. &lt;div&gt; 定义文档中的矩形盒子(块级元素代表)。
+2. &lt;span&gt; 定义文档中的突出显示内容(行级元素代表)。
+3. &lt;head&gt; 定义关于文档的信息。
+4. &lt;meta&gt; 定义关于 HTML 文档的元信息。
+5. &lt;script&gt; 定义客户端脚本。
+6. &lt;style&gt; 定义文档的样式信息。</code></pre><h2 id="5-HTML特殊符号"><a href="#5-HTML特殊符号" class="headerlink" title="5.HTML特殊符号"></a>5.HTML特殊符号</h2><p><img src="https://i.ibb.co/MPCYtM7/web01.png" alt></p>
+<h2 id="6-HTML块级元素和行级元素"><a href="#6-HTML块级元素和行级元素" class="headerlink" title="6.HTML块级元素和行级元素"></a>6.HTML块级元素和行级元素</h2><h3 id="6-1-什么是块级元素"><a href="#6-1-什么是块级元素" class="headerlink" title="6.1. 什么是块级元素"></a>6.1. 什么是块级元素</h3><pre><code>1. 块级元素宽度默认和父元素宽度一样,
+2. 块级元素占据父元素一行,不可与其他元素共处一行
+3. 可以通过宽高属性调整元素大小</code></pre><h3 id="6-2-什么是行级元素"><a href="#6-2-什么是行级元素" class="headerlink" title="6.2. 什么是行级元素"></a>6.2. 什么是行级元素</h3><pre><code>1. 行级元素的大小为自身内容的宽高
+2. 行级元素可以与其他行级元素共处一行,当顶到行末,显示不下后自动换行
+3. 行级元素没有宽高属性,无法通过宽高调整元素大小</code></pre><h3 id="6-3-块级元素和行级元素的切换"><a href="#6-3-块级元素和行级元素的切换" class="headerlink" title="6.3. 块级元素和行级元素的切换"></a>6.3. 块级元素和行级元素的切换</h3><pre><code>通过display属性进行切换
+取值为:
+1. block 代表块级元素
+2. inline 代表行级元素
+3. inline-block 行级块元素
+    此类元素特点为:
+    1. 可以和其他非块级元素共处一行
+    2. 同时也具有宽高属性 </code></pre><h2 id="7-相对路径和绝对路径"><a href="#7-相对路径和绝对路径" class="headerlink" title="7. 相对路径和绝对路径"></a>7. 相对路径和绝对路径</h2><p>像网页上插入图片这种外部文件，需要定义文件的引用地址，引用外部文件还包括引用外部样式表，javascript等等，引用路径分为相对路径和绝对路径。</p>
+<ul>
+<li>相对路径：相对于引用文件本身去定位被引用的文件地址</li>
+</ul>
+<ul>
+<li>绝对路径：相对于磁盘的位置去定位文件的地址</li>
+</ul>
+<p>绝对路径在整体文件迁移时会因为磁盘和顶层目录的改变而找不到文件，相对路径就没有这个问题。相对路径的定义技巧：</p>
+<ul>
+<li>“ ./ ” 表示当前文件所在目录下，比如：“./pic.jpg” 表示当前目录下的pic.jpg的图片，这个使用时可以省略。</li>
+<li>“ ../ ” 表示当前文件所在目录下的上一级目录，比如：“../images/pic.jpg” 表示当前目录下的上一级目录下的images文件夹中的pic.jpg的图片。</li>
+</ul>
+<h2 id="8-HTML5新结构标签"><a href="#8-HTML5新结构标签" class="headerlink" title="8.HTML5新结构标签"></a>8.HTML5新结构标签</h2><p>h5新增的主要语义化标签如下：</p>
+<p>1、header 页面头部、页眉<br>2、nav 页面导航<br>3、article 一篇文章<br>4、section 文章中的章节<br>5、aside 侧边栏<br>6、footer 页面底部、页脚</p>
+<p>页面使用标签布局示意图：<br><img src="https://i.ibb.co/hFjzDsz/layout.png" alt="示例图片"></p>
+<p>PC端兼容h5的新标签的方法，在页面中引入以下js文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/html5shiv/r29/html5.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/forALL/" rel="tag"># forALL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/17/web前端-chapt02/" rel="next" title="web前端-chapt02">
+                <i class="fa fa-chevron-left"></i> web前端-chapt02
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://avatars1.githubusercontent.com/u/46606813?s=400&v=4" alt="Mr.White">
+            
+              <p class="site-author-name" itemprop="name">Mr.White</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">Artikel</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">schlagwörter</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/alcodespower" title="GitHub &rarr; https://github.com/alcodespower" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:wzysws@gmail.com" title="E-Mail &rarr; mailto:wzysws@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-HTML简介"><span class="nav-number">1.</span> <span class="nav-text">1.HTML简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-HTML代码编辑工具和浏览器的选择"><span class="nav-number">2.</span> <span class="nav-text">2.HTML代码编辑工具和浏览器的选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-代码编辑工具"><span class="nav-number">2.1.</span> <span class="nav-text">2.1. 代码编辑工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-浏览器"><span class="nav-number">2.2.</span> <span class="nav-text">2.2. 浏览器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-HTML语法"><span class="nav-number">3.</span> <span class="nav-text">3.HTML语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-html标准语法结构"><span class="nav-number">3.1.</span> <span class="nav-text">3.1.html标准语法结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-单标签和双标签"><span class="nav-number">3.2.</span> <span class="nav-text">3.2.单标签和双标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-标签的属性和值"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 标签的属性和值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-HTML常用标签"><span class="nav-number">4.</span> <span class="nav-text">4.HTML常用标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-基础标签"><span class="nav-number">4.1.</span> <span class="nav-text">4.1.基础标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-含样式的标签"><span class="nav-number">4.2.</span> <span class="nav-text">4.2. 含样式的标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-表单标签"><span class="nav-number">4.3.</span> <span class="nav-text">4.3. 表单标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-图像-音频-视频标签"><span class="nav-number">4.4.</span> <span class="nav-text">4.4.图像/音频/视频标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-链接标签"><span class="nav-number">4.5.</span> <span class="nav-text">4.5.链接标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-列表标签"><span class="nav-number">4.6.</span> <span class="nav-text">4.6.列表标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-表格标签"><span class="nav-number">4.7.</span> <span class="nav-text">4.7.表格标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-其他常用标签"><span class="nav-number">4.8.</span> <span class="nav-text">4.8.其他常用标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-HTML特殊符号"><span class="nav-number">5.</span> <span class="nav-text">5.HTML特殊符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-HTML块级元素和行级元素"><span class="nav-number">6.</span> <span class="nav-text">6.HTML块级元素和行级元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-什么是块级元素"><span class="nav-number">6.1.</span> <span class="nav-text">6.1. 什么是块级元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-什么是行级元素"><span class="nav-number">6.2.</span> <span class="nav-text">6.2. 什么是行级元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-块级元素和行级元素的切换"><span class="nav-number">6.3.</span> <span class="nav-text">6.3. 块级元素和行级元素的切换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-相对路径和绝对路径"><span class="nav-number">7.</span> <span class="nav-text">7. 相对路径和绝对路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-HTML5新结构标签"><span class="nav-number">8.</span> <span class="nav-text">8.HTML5新结构标签</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.White <br>尊重版权,请勿商业爬虫<br></span>
+  <div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Insgesamt gezählte Symbole">137k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="Insgesamte Lesezeit">2:04</span>
+  
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Alle Besucher">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Alle Aufrufe">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+<script type="text/javascript" src="/js/crash_cheat.js"></script>
+
+<script type="text/javascript" src="/js/dynamic_bg.js"></script>
+<!-- live2d-->
+<script src="/live2d-widget/autoload.js"></script>
+
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+
